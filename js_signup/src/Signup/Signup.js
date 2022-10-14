@@ -1,7 +1,27 @@
-import React from 'react'
+import React,{Component} from 'react'
+import './Signupcss.css'
 
-export default function Signup() {
-  return (
+export default class Signup extends Component {
+    state = {
+        disabled:true
+    }
+  
+    handleChange =(e) =>{
+        if(e.target.value.length === 10)
+        {
+            this.setState({
+                disabled:false
+            });
+        }
+        else{
+          this.setState({
+            disabled:true 
+          });
+        }
+  
+    }
+render(){
+  return ( 
     <div className="Parent">
         <div className="left">
             <section className='copy'>
@@ -11,9 +31,10 @@ export default function Signup() {
             
         </div>
         <div className="right">
+            <div className='container d-flex justify-content-center'>
             <form>
                 <section className='copy'>
-                    <h2>Sign Up</h2>
+                    <h2>Sign Up for Job Seeker</h2>
                     <div className='login-container'>
                         <p> Already have an account? <a href="/">
                             <strong>Log In </strong></a></p>
@@ -77,10 +98,40 @@ export default function Signup() {
                     </select>
                 </div>
 
+                <div className='input-container-mobile'>
+                    <div className="row g-3 justify-content-start">
+                            <div className='col-sm-2'>
+                                <input type="text" id="isd" name ="isd" placeholder='ISD'/>
+                            </div>
+                            
+                            < div className='col-sm-6'>
+                                 <input className='required' type="tel"  id="mobile" name ="mobile"  placeholder='Mobile No' onChange={this.handleChange} />
+                            </div>
+
+                        
+                            <div className="col-sm-4">
+                                <button className='genotp' 
+                                id="btngenotp"
+                                name = "genotp" type ="submit" disabled={this.state.disabled} > Generate OTP</button>
+                            </div> 
+                        </div>
+                </div>
+                
+
+                <div className ="input-container-otp">
+                    <input type="text" id ="otp" name = "otp" placeholder='Enter OTP'/>
+                </div>
+
+                <div className='signup-button'>
+                    <button className="signup" type="submit">Sign Up</button>
+                </div> 
+
                 
             </form>
-            
+            </div>
         </div>
     </div>
+    
   )
+}
 }

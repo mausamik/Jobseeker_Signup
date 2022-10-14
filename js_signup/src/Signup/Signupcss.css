@@ -1,0 +1,151 @@
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --prinary-blue:#233975;
+  
+  }
+  body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    background-color: white;
+  
+  }
+.container d-flex outerbody{
+    background-color: black;
+}
+  .Parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 40%;
+    padding: 50px;
+    
+    height: 100vh;
+    background-color:#233975;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.right {
+   
+    width: 60%;
+    padding: 50px;
+    padding-bottom: none;
+    height: 100vh;
+   background-color:white;
+    
+}
+
+.right form{
+    height: auto;
+    width : 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.genotp:disabled{
+    /* background-color: #233975;
+    color:white; */
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .genotp:enabled{
+    background-color: #233975;
+    color:white; 
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  
+  .signup{
+  
+    display: block;
+    width: 100%;
+    background-color: #233975;
+    color: white;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1rem;
+    font-size: 1.23rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+  } 
+  
+#dropdown{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    color:grey
+  
+  } 
+  
