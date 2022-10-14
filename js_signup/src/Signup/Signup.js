@@ -24,10 +24,10 @@ render(){
   return ( 
     <div className="Parent">
         <div className="left">
-            <section className='copy'>
-                <h1>Logo</h1>
-                <h4>iQuizuAnswer</h4>
-            </section>
+            <div className='container d-flex justify-content-center'>
+                <h2>Logo</h2>
+                <h4>Where job finds you</h4>
+            </div>
             
         </div>
         <div className="right">
@@ -59,10 +59,11 @@ render(){
 
                 <div className='input-container-password'>
                     <div className="row justify-content-start">
-                        <div className="col-6">
+                        <div className="col-6 pass">
                             <input type='password' id = 'password' name = "password" placeholder='Password'/> 
+                            <div className='hide'>Password requirements</div>
                         </div>
-                        <div className="col-6">
+                        <div className="col-6 conpass">
                         <input type='password' id = 'conpassword' name = "conpassword" placeholder=' Confirm Password'/> 
                         </div>
                     </div>
