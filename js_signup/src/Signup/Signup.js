@@ -20,13 +20,17 @@ export default class Signup extends Component {
         }
   
     }
+
+    
 render(){
   return ( 
     <div className="Parent">
         <div className="left">
             <div className='container d-flex justify-content-center'>
-                <h2>Logo</h2>
-                <h4>Where job finds you</h4>
+                <section>
+                    <h2> Logo</h2>
+                    <h3>Where the job finds you</h3>
+                </section>
             </div>
             
         </div>
@@ -59,9 +63,9 @@ render(){
 
                 <div className='input-container-password'>
                     <div className="row justify-content-start">
-                        <div className="col-6 pass">
-                            <input type='password' id = 'password' name = "password" placeholder='Password'/> 
-                            <div className='hide'>Password requirements</div>
+                        <div className="pass col-6">
+                            <input type='password' id = 'password' name = "password" placeholder='Password' data-bs-toggle="tooltip" data-bs-placement ="bottom" title="Password Requirement"/> 
+                            {/* <span className='tooltip'>Password requirements</span> */}
                         </div>
                         <div className="col-6 conpass">
                         <input type='password' id = 'conpassword' name = "conpassword" placeholder=' Confirm Password'/> 
