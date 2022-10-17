@@ -20,9 +20,11 @@ export default class Signup extends Component {
         }
   
     }
+    
 
     
 render(){
+    
   return ( 
     <div className="Parent">
         <div className="left">
@@ -48,11 +50,11 @@ render(){
                 <div className="input-container-name">
                     <div className='row justify-content-start'>
                         <div className='col-6'>
-                            <input type="text" name="firstname" placeholder="First Name"/>
+                            <input type="text" class="first" name="firstname" placeholder="First Name" data-bs-toggle="tooltip" data-bs-placement ="bottom" title="Name Requirement"/>
                         </div>
 
                         <div className='col-6'>
-                            <input type="text" name="lastname" placeholder="Last Name"/>
+                            <input type="text" class="last" name="lastname" placeholder="Last Name"/>
                         </div>
                     </div>
                 </div>
@@ -64,7 +66,7 @@ render(){
                 <div className='input-container-password'>
                     <div className="row justify-content-start">
                         <div className="pass col-6">
-                            <input type='password' id = 'password' name = "password" placeholder='Password' data-bs-toggle="tooltip" data-bs-placement ="bottom" title="Password Requirement"/> 
+                            <input type='password' class ="pass" id = 'password' name = "password" placeholder='Password' data-bs-toggle="tooltip" data-bs-placement ="bottom" title="Password Requirement"/> 
                             {/* <span className='tooltip'>Password requirements</span> */}
                         </div>
                         <div className="col-6 conpass">
@@ -136,6 +138,8 @@ render(){
             </div>
         </div>
     </div>
+
+
     
   )
 }
