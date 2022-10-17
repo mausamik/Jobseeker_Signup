@@ -67,6 +67,7 @@ render(){
                     <div className="row justify-content-start">
                         <div className="pass col-6">
                             <input type='password' class ="pass" id = 'password' name = "password" placeholder='Password' data-bs-toggle="tooltip" data-bs-placement ="bottom" title="Password Requirement"/> 
+                            
                             {/* <span className='tooltip'>Password requirements</span> */}
                         </div>
                         <div className="col-6 conpass">
@@ -121,7 +122,7 @@ render(){
                                 id="btngenotp"
                                 name = "genotp" type ="submit" disabled={this.state.disabled} > Generate OTP</button>
                             </div> 
-                        </div>
+                    </div>
                 </div>
                 
 
